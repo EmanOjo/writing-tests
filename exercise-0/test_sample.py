@@ -15,3 +15,4 @@ def test_add_five():
 
 def test_double():
     assert double(11) == 22
+print("Hello")
