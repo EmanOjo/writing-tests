@@ -2,13 +2,10 @@
 def hello_world():
     return "Hello, world!"
 
-# TODO: use a ternary
+# TODO: use a ternary - one line of else statement
 def greet(name = None):
-    if name == None:
-        return "Hello, world!"
-    else:
-        return f"Hello, {name}!"
-
+    return "Hello, world!" if name == None else f"Hello, {name}!"
+    
 # TODO: remove if/else hell and general HOW DO I READ THIS-ness
 def describe_number(num):
     if num < 0:
@@ -39,5 +36,6 @@ def describe_number(num):
         # let's hope for the best here because I don't know what's going on
         return { 'is_even': False, 'is_positive': True }
 
+print(describe_number(2))
 
 
